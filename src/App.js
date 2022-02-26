@@ -1,25 +1,46 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import React, {useEffect, useState} from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  const [currentScore, setCurrentScore] = useState(0);
+  const [bestScore, setBestScore] = useState(0);
+  const [level, setLevel] = useState(0);
+  const [availableDigimons, setAvailableDigimons] = useState([]);
+  const [chosenDigimons, setChosenDigimons] = useState([]);
+  const [allDigimons, setAllDigimons] = useState([]);
+
+  useEffect(()=>{
+    fetch('https://digimon-api.vercel.app/api/digimon').then((res)=>{
+      return res.json();
+    }).then((data)=>{
+      setAllDigimons(data);
+    });
+  });
+
+  const setCurrentLevelDigimons = () => {
+    const randomedIndex = [];
+    for(let i = 0;i<level;i++){
+      const randomIndex = Math.floor(Math.random()*allDigimons.length);
+      if(randomedIndex.includes(randomIndex)){//if already in randomedIndex
+        i--;
+      }else{
+        availableDigimons.push(allDigimons[randomIndex]);
+        randomedIndex.push(randomIndex);
+      }
+    }
+  }
+
+  const checkLevelCompletion = () => {
+
+  }
+
+  return <div>
+    <Header />
+      
+    <Footer />
+  </div>
 }
 
 export default App;
