@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import React, {useEffect, useState} from 'react';
 import DigimonDeck from './components/DigimonDeck';
+import ScoreBoard from './components/ScoreBoard';
 
 const App = () => {
   const [currentScore, setCurrentScore] = useState(0);
@@ -102,7 +103,10 @@ const App = () => {
   return <div>
     <Header />
       <main>
-        <p>current score: {currentScore} best score: {bestScore} level: {level}</p>
+        <ScoreBoard currentScore={currentScore} bestScore={bestScore}/>
+        <p>Level: {level}</p>
+        <p>Choose the remaining Digimon that has not been selected</p>
+        <p></p>
         {allDigimons.length>0
         ?<DigimonDeck digimons={currentDigimonDeck} onChooseDigimon={chooseDigimon}/>
         :null}
