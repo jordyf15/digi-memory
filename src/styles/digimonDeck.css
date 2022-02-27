@@ -1,0 +1,32 @@
+#digimon-deck{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 30px;
+    /* column-gap: 30px; */
+}
+
+@media only screen and (min-width: 580px) {
+    #digimon-deck{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (min-width: 840px) {
+    #digimon-deck{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    #digimon-deck{
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media only screen and (min-width: 1360px) {
+    #digimon-deck{
+        grid-template-columns: auto auto auto auto auto;
+    }
+}

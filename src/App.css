@@ -6,6 +6,13 @@ body{
   padding: 0;
   margin: 0;
   background-color: #055ccd;
+  background-image:
+    linear-gradient(rgba(255,255,255,.5) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(255,255,255,.5) 2px, transparent 2px),
+    linear-gradient(rgba(255,255,255,.28) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.28) 1px, transparent 1px);
+  background-size: 100px 100px, 100px 100px, 20px 20px, 20px 20px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
 }
 *{
   box-sizing: border-box;
@@ -14,11 +21,27 @@ body{
 }
 main{
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #body{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+#level{
+  font-size: 2em;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#instruction{
+  text-align: center;
+  padding: 20px;
+  margin-top: 0;
+  padding-top: 10px;
 }
 
 /* yellow #ffcb10 */

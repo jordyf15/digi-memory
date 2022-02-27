@@ -1,10 +1,11 @@
 import React from 'react';
+import '../styles/scoreboard.css';
 
 const ScoreBoard = ({currentScore, bestScore}) => {
-    return <div>
+    return <div id='scoreboard'>
         <p>
-            <span>Score: {currentScore}</span>
-            <span>Best: {bestScore}</span>
+            <span id='current-score'>Score: {currentScore}</span>
+            <span id='best-score'>Best: {bestScore}</span>
         </p>
     </div>
 }

@@ -1,0 +1,21 @@
+#scoreboard{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    max-width: 350px;
+}
+#scoreboard p{
+    margin-top: 50px;
+    width: 250px;
+    background-color: #f8d00f;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    box-shadow: 5px 5px 0px black;
+}
+
+#best-score{
+    color: #e42c48;
+}
+

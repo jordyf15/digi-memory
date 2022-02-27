@@ -1,0 +1,24 @@
+.digimon-cards{
+    width: 200px;
+    background-color: rgba(123, 173, 236, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    margin: 0 15px;
+    box-shadow: 7px 7px 0px rgba(49, 138, 247, 0.8);
+}
+.digimon-cards:hover{
+    box-shadow: none;
+    background-color: rgba(49, 138, 247, 0.8);
+    position: relative;
+    top: 7px;
+    left: 7px;
+}
+
+.digimon-cards img{
+    width: 95%;
+    margin-top: 12px;
+    border-radius: 10px;
+}
