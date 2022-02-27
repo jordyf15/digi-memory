@@ -100,16 +100,16 @@ const App = () => {
     }
   }
 
-  return <div>
+  return <div id="body">
     <Header />
       <main>
         <ScoreBoard currentScore={currentScore} bestScore={bestScore}/>
         <p>Level: {level}</p>
         <p>Choose the remaining Digimon that has not been selected</p>
         <p></p>
-        {allDigimons.length>0
+        {/* {allDigimons.length>0
         ?<DigimonDeck digimons={currentDigimonDeck} onChooseDigimon={chooseDigimon}/>
-        :null}
+        :null} */}
       </main>
     <Footer />
   </div>

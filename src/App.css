@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+@font-face{
+  font-family: 'DigiFont';
+  src: local('DigiFont'), url(./fonts/digifont.ttf) format('truetype');
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  padding: 0;
+  margin: 0;
+  background-color: #055ccd;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+*{
+  box-sizing: border-box;
+  font-family: DigiFont;
+  
 }
-
-.App-header {
-  background-color: #282c34;
+main{
+  flex-grow: 1;
+}
+#body{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+footer{
+  /* background-color: pink; */
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* yellow #ffcb10 */
+/* bluebg #055ccd */
+/* blue card #7badec */
+/* black font 365651 */
+/* red font e42c48 */
