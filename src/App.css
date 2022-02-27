@@ -20,9 +20,6 @@ main{
   display: flex;
   flex-direction: column;
 }
-footer{
-  /* background-color: pink; */
-}
 
 /* yellow #ffcb10 */
 /* bluebg #055ccd */
