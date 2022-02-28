@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/digi-memory/static/css/main.b595a347.css",
-    "main.js": "/digi-memory/static/js/main.263df60a.js",
+    "main.js": "/digi-memory/static/js/main.a7c5be45.js",
     "static/js/787.d6a8b40f.chunk.js": "/digi-memory/static/js/787.d6a8b40f.chunk.js",
     "static/media/digifont.ttf": "/digi-memory/static/media/digifont.dfd416711af7c2a27296.ttf",
     "static/media/github-square-brands.svg": "/digi-memory/static/media/github-square-brands.b758fd95bedfb4e7b62ac56c4d6e5386.svg",
-    "index.html": "/digi-memory/index.html",
     "static/media/linkedin-brands.svg": "/digi-memory/static/media/linkedin-brands.787aa301244425e7fe5bdcff7917892f.svg",
+    "index.html": "/digi-memory/index.html",
     "main.b595a347.css.map": "/digi-memory/static/css/main.b595a347.css.map",
-    "main.263df60a.js.map": "/digi-memory/static/js/main.263df60a.js.map",
+    "main.a7c5be45.js.map": "/digi-memory/static/js/main.a7c5be45.js.map",
     "787.d6a8b40f.chunk.js.map": "/digi-memory/static/js/787.d6a8b40f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b595a347.css",
-    "static/js/main.263df60a.js"
+    "static/js/main.a7c5be45.js"
   ]
 }
