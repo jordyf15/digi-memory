@@ -40,7 +40,6 @@ const App = () => {
   const setCurrentLevelDigimons = () => {
     const randomedIndex = [];
     const currentLevelDigimons = [];
-    console.log(level);
     for(let i = 0;i<(level*2);i++){
       const randomIndex = Math.floor(Math.random()*allDigimons.length);
       if(randomedIndex.includes(randomIndex)){//if already in randomedIndex
